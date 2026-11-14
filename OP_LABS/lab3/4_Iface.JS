@@ -12,7 +12,7 @@ const object1 = {
 
 const iface = (object) => {
     const key = Object.keys(object);
-    const functionArray =[]
+    const functionArray =[];
     for (let i=0; i<=key.length-1;i++){
         if (typeof object[key[i]]==="function"){
             functionArray.push([key[i], object[key[i]].length]);
