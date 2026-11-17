@@ -1,14 +1,6 @@
 'use strict';
 
-const difference = (array1, array2) =>{
-    const newArray =[];
-    for (const item of array1) {
-        if (array2.indexOf(item)===-1 ){
-            newArray.push(item);
-        }
-    }
-    return newArray;
-}
+const difference = (array1, array2) => array1.filter((item) => !array2.includes(item));
 
 const array1 = [7, -2, 10, 5, 0];
 const array2 = [0, 10];
